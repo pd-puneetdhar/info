@@ -1,0 +1,5 @@
+When to use recursion
+- recursion is more elegant
+- Should not be hard to understand or debug
+- iterative solutions are more efficient than recursive calls due to to overhead of calls
+

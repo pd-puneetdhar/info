@@ -3,3 +3,19 @@ When to use recursion
 - Should not be hard to understand or debug
 - iterative solutions are more efficient than recursive calls due to to overhead of calls
 
+What is tail recursion? 
+When recursive call is the last statement in the recursion function, there should be no operation afer the recursion call. 
+Saving the stack for such calls would be a waste, tail recursion is not liked or preferred
+
+Substituion method for recursion 
+- recurrence relation T(n)
+  T(n) = 2T(n-1) where T(0) = a
+  T(n-1) = 2^2T(n-2) 
+  T(n-k) = 2^kT(n-(k - 1))
+  T(n - n-1) = 2^(n-1)T(n- n - 1 + 1) = 2^(n-1)T(0) = 2^(n-1)(a)
+
+
+----------------------------------------------------------------------
+
+Tower of Hanoi 
+
